@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-const appointmentSchema = Schema({
+const pharmacySchema = Schema({
   name: {
     type: String,
     required: true,
@@ -28,6 +28,6 @@ const appointmentSchema = Schema({
   },
 });
 
-const Appointment = model("Appointment", appointmentSchema);
+const Pharmacy = model("Pharmacy", pharmacySchema);
 
-export default Appointment;
+export default Pharmacy;
